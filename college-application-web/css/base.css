@@ -1,0 +1,38 @@
+/* Clear the inner and outer margins of all labels */
+* {
+    margin: 0;
+    padding: 0;
+    /* choose a boxing model */
+    box-sizing: border-box;
+}
+/* Remove the dot from li */
+ul li {
+    list-style: none
+}
+button {
+    /* The mouse becomes a small hand when move over a button*/
+    cursor: pointer
+}
+
+a {
+    color: #666;
+    text-decoration: none
+}
+
+a:hover {
+    color: #c81623
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 15px; 
+}
+  
+/* Customize the scrollbar button */
+::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 5px;
+}

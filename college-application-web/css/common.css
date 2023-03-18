@@ -1,0 +1,290 @@
+/* Declare the font icon */
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Climate+Crisis&family=Dancing+Script:wght@700&family=Edu+NSW+ACT+Foundation:wght@500&family=PT+Sans&family=Pacifico&family=Playfair+Display:ital,wght@1,500&family=Sono:wght@600&family=Work+Sans&display=swap');
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?tomleg');
+    src:  url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+      url('../fonts/icomoon.woff?tomleg') format('woff'),
+      url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+/* basic formats */
+/* determine the width of website */
+.w {
+    width: 100%;
+    margin: 0 auto;
+}
+/* Header */
+.header {
+    position: relative;
+    height: 90px;
+    background-color: #DFE3E5;
+}
+.logo {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 171px;
+    height: 61px;
+}
+.logo a {
+    display: block;
+    width: 171px;
+    height: 61px;
+    font-family: 'Pacifico', cursive;
+    color: #b1191a;
+}
+.search {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    width: 538px;
+    height: 46px;
+    border: 2px solid #b1191a;
+}
+.search input {
+    float: left;
+    width: 454px;
+    height: 42px;
+    padding-left: 10px;
+}
+.search button {
+    float: left;
+    width: 80px;
+    height: 42px;
+    background-color: #b1191a;
+    font-size: 16px;
+    color: #fff;
+}
+/* Navigation */
+.nav {
+    background-color:  #fff;
+}
+.navitems {
+    height: 70px;
+}
+.navitems ul li {
+    float: left;
+    /* margin-left: 70px; */
+    text-align: center;
+    width: 25%;
+    font-family: 'Sono', sans-serif;
+}
+.navitems ul li a {
+    display: block;
+    height: 70px;
+    line-height: 70px;
+    font-size: 30px;
+    padding: 0 25px;
+}
+.navitems ul li a:hover {
+    background-color: #b1191a;
+    color: white;
+}
+.showbox {
+    width: 100%;
+    overflow: hidden;
+}
+
+.showbox ul {
+    position: relative;
+    width: 300%; /* 使ul元素的宽度是其父元素的3倍，以容纳三个<li>元素 */
+    animation: img 12s ease-in-out infinite;
+}
+
+.showbox ul:hover {
+    animation-play-state: paused;
+}
+
+.showbox ul li {
+    width: 33.3%;
+    float: left;
+}
+
+@keyframes img {
+    0%, 33% {
+        transform: translateX(0%);
+    }
+    34%, 66% {
+        transform: translateX(-33.3%);
+    }
+    67%, 100% {
+        transform: translateX(-66.6%);
+    }
+}
+/* Information section */
+.informations {
+    height: 500px;
+}
+
+.informations .ranking{
+    float: left;
+    width: calc(33% - 5px);
+    height: 100%;
+}
+/* title for the following sections */
+.title{
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+    background-color: #b1191a;
+    color: white;
+    font-family: 'Sono', sans-serif;
+}
+.informations .ranking ul {
+    list-style-type: none;
+    font-family: Arial, sans-serif;
+    height: 400px;
+    overflow-y: scroll;
+}
+.informations .ranking ul li{
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Anton', sans-serif;
+
+}
+.informations .ranking ul li:hover {
+    box-shadow: 0 0 10px gray;
+    transform: translateY(-5px);
+}
+.informations .checklist{
+    float: left;
+    /* padding: 5px; */
+    margin-left: 5px;
+    width: calc(67%);
+    height: 100%;
+}
+.informations .checklist table{
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+.checklist td:hover{
+    box-shadow: 0 0 10px gray;
+    transform: translateY(-5px);
+}
+
+/* resources section */
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.square {
+    margin: 10px;
+    width: 300px;
+    height: 400px;
+    /* line-height: 200px; */
+    /* text-align: center; */
+    box-shadow: 0px 0px 5px black;
+    cursor: pointer;
+    border-radius: 10%;
+}
+.square .name{
+    border-radius: inherit;
+    height: 50%;
+    display: flex;
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+}
+.container div:nth-of-type(1) .name{
+    background-image: url(https://th.bing.com/th/id/OIP._fVxHQeUJGWtxHy7wpqo4AHaER?pid=ImgDet&rs=1);
+    background-position: center; /* 使背景图像居中 */
+    background-repeat: no-repeat; /* 如果需要，禁用背景图像的重复 */
+    background-size: cover; /* 保持纵横比并覆盖整个元素 */
+    color: white;
+}
+.container div:nth-of-type(2) .name{
+    background-image: url(https://th.bing.com/th/id/R.a4d1f8d83e333b577344df8eff5fad7f?rik=KVip23lE1Pe%2fBQ&pid=ImgRaw&r=0);
+    background-position: center; /* 使背景图像居中 */
+    background-repeat: no-repeat; /* 如果需要，禁用背景图像的重复 */
+    background-size: cover; /* 保持纵横比并覆盖整个元素 */
+    color: white;
+}
+.container div:nth-of-type(3) .name{
+    background-image: url(https://assets.orderpromos.com/uploads/store_front/logo/08-13-2019/1816/niche-storefront.jpg);
+    background-position: center; /* 使背景图像居中 */
+    background-repeat: no-repeat; /* 如果需要，禁用背景图像的重复 */
+    background-size: cover; /* 保持纵横比并覆盖整个元素 */
+    color: white;
+}
+.container div:nth-of-type(4) .name{
+    background-image: url(https://th.bing.com/th/id/OIP.1oDqFPZiQqRQcep8HPLZfQAAAA?pid=ImgDet&rs=1);
+    background-position: center; /* 使背景图像居中 */
+    background-repeat: no-repeat; /* 如果需要，禁用背景图像的重复 */
+    background-size: cover; /* 保持纵横比并覆盖整个元素 */
+    color: white;
+}
+
+
+.square .description{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-family: 'Work Sans', sans-serif;
+}
+.square:hover {
+    box-shadow: 0px 0px 10px black;
+    transform: translateY(-5px);
+}
+/* news section */
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.news-item {
+    width: 90%;
+    height: 250px;
+    margin-top: 20px;
+    cursor: pointer;
+    display: flex;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+}
+  
+.news-item img {
+    width: 40%;
+}
+  
+.news-content {
+    padding: 10px;
+}
+.news-content p {
+    font-family: 'Work Sans', sans-serif;
+}
+.news-content h3{
+    font-family: 'Playfair Display', serif;
+}
+.news-content span{
+    font-family: 'Playfair Display', serif;
+}
+  
+.news-item:hover {
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    transform: translateY(-4px);
+}
+/* Footer */
+.footer {
+    margin-top: 20px;
+    background-color: #b1191a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer p {
+    margin: 5px;
+}
+.slogan {
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;;
+}
